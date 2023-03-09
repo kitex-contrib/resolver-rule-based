@@ -11,7 +11,7 @@ This resolver needs an implemented Resolver, which is able to resolve instances 
 ```
 // Define a filter function.
 // For example, only get the instances with a tag of {"k":"v"}.
-filterFunc = func(ctx context.Context, instance []discovery.Instance) []discovery.Instance {
+filterFunc := func(ctx context.Context, instance []discovery.Instance) []discovery.Instance {
      var res []discovery.Instance
      for _, ins := range instance {
          if v, ok := ins.Tag("k"); ok && v == "v" {
@@ -42,3 +42,6 @@ tagResolver := ruleBasedResolver.NewRuleBasedResolver(resolver, filterRule)
 // add this option when construct Kitex Client
 opt := client.WithResolver(tagResolver) 
 ```
+
+## Demo
+Please refer to the `/demo` for details.
