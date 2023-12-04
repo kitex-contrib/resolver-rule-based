@@ -71,7 +71,6 @@ var (
 )
 
 func TestFilter(t *testing.T) {
-
 	var res []discovery.Instance
 	filter := &instanceFilter{}
 	res = filter.filter(context.Background(), mockInstances)
