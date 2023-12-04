@@ -2,10 +2,6 @@
 
 [English](README.md) | 中文
 
-This project provides a rule-based resolver for Kitex. It allows user to configure rules to filter service instances in Service Discovery, achieving the function of traffic split.
-
-This resolver needs an implemented Resolver, which is able to resolve instances from the registry center, and some customized filter rules (e.g. filter by tags in the instances).
-
 这个项目为 Kitex 提供了一个基于规则的解析器。它允许用户在服务发现中配置规则来过滤服务实例，实现流量切分的功能。
 
 这个解析器需要一个已实现的 Resolver，能够从注册中心解析实例，同时还需要一些定制化的过滤规则（例如，在实例中根据标签进行过滤）。
